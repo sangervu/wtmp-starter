@@ -1,5 +1,7 @@
 const submit = document.querySelector('.submit');
 const languageSubmit = document.querySelector('.languageField');
+const sortSubmit = document.querySelector('.order');
+const randomSubmit = document.querySelector('.random');
 
 const coursesEn = ["Hamburger, cream sauce and poiled potates",
   "Goan style fish curry and whole grain rice",
@@ -36,8 +38,12 @@ function sort() {
   document.getElementById("box1").innerHTML = courses;
 }
 
+sortSubmit.addEventListener('click', sort);
+
 function random() {
   var random = courses[Math.floor(Math.random() * courses.length)];
   window.alert(random);
 }
+
+randomSubmit.addEventListener('click', random);
 
