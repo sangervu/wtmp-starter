@@ -34,8 +34,8 @@ submit.addEventListener('click', teksti);
 
 function sort() {
   courses.sort();
-  /*courses.reverse();*/
   document.getElementById("box1").innerHTML = courses;
+  window.alert("järjestetty");
 }
 
 sortSubmit.addEventListener('click', sort);
