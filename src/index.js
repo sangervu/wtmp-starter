@@ -10,49 +10,21 @@ import FazerMenu from "./fazer-week-example.json";// importataan paikallisessa h
 import FazerMenuEN from "./fazer-week-example-en.json";// importataan paikallisessa hakemistossa oleva json tiedosto
 import SodexoMenu from "./sodexo-day-example.json";// importataan paikallisessa hakemistossa oleva json tiedosto
 
-// const coursesEn = ["Hamburger, cream sauce and poiled potates",
-//   "Goan style fish curry and whole grain rice",
-//   "Vegan Chili sin carne and whole grain rice",
-//   "Broccoli puree soup, side salad with two napas",
-//   "Lunch baguette with BBQ-turkey filling",
-//   "Cheese / Chicken / Vege / Halloum burger and french fries"];
 
-// const coursesFi = ["Jauhelihapihvi, ruskeaa kermakastiketta ja keitettyä perunaa",
-//   "Goalaista kalacurrya ja täysjyväriisiä",
-//   "vegaani Chili sin carne ja täysjyväriisi",
-//   "Parsakeittoa,lisäkesalaatti kahdella napaksella",
-//   "Lunch baguette with BBQ-turkey filling",
-//   "Juusto / Kana / Kasvis / Halloumi burgeri ja ranskalaiset"];
-
-// function teksti() {
-//   var kieli = languageSubmit.value;
-//   if (kieli === 'suomi') {
-//     courses = coursesFi;
-//     document.getElementById("box1").innerHTML = coursesFi.map(coursesFi => coursesFi);
-//   }
-
-//   if (kieli === 'english') {
-//     courses = coursesEn;
-//     document.getElementById("box1").innerHTML = coursesEn.map(coursesEn => coursesEn);
-//   }
+// function sort() {
+//   courses.sort();
+//   document.getElementById("box1").innerHTML = courses;
+//   window.alert("järjestetty");
 // }
 
-// submit.addEventListener('click', teksti);
+// sortSubmit.addEventListener('click', sort);
 
-function sort() {
-  courses.sort();
-  document.getElementById("box1").innerHTML = courses;
-  window.alert("järjestetty");
-}
+// function random() {
+//   var random = courses[Math.floor(Math.random() * courses.length)];
+//   window.alert(random);
+// }
 
-sortSubmit.addEventListener('click', sort);
-
-function random() {
-  var random = courses[Math.floor(Math.random() * courses.length)];
-  window.alert(random);
-}
-
-randomSubmit.addEventListener('click', random);
+// randomSubmit.addEventListener('click', random);
 
 
    ///////////////////// FAZER MENU SUOMI /////////////////////
